@@ -23,19 +23,11 @@ function myButtonClicked() {
   var product = 0
   var counter = 0
 
-  while (counter < Math.abs(numB)) {
-    counter++
-    product = product + Math.abs(numA)
-  }
+  for (let counter = 0; counter < Math.abs(numN); counter++) {
+    product = product + Math.abs(numN)++ 
+    document.getElementById("product").innerHTML =
+     "The number is " + product + "<br>"
+  } 
 
-  if ((numA < 0 && numB > 0) || (numB < 0 && numA > 0))
-    document.getElementById("multiplication-product").innerHTML =
-      "The product is equal to - " + product + "."
-  else
-    document.getElementById("multiplication-product").innerHTML =
-      "The product is equal to " + product + "."
 }
-for (let i = 0; i < 5; i++) {
-  document.getElementById("multiplication-product").innerHTML =
-    "The number is " + product + "<br>"
-}
+
