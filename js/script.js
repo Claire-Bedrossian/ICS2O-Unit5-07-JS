@@ -36,5 +36,6 @@ function myButtonClicked() {
       "The product is equal to " + product + "."
 }
 for (let i = 0; i < 5; i++) {
-  document.getElementById("multiplication-product").innerHTML = "The number is " + product + "<br>";
+  document.getElementById("multiplication-product").innerHTML =
+    "The number is " + product + "<br>"
 }
