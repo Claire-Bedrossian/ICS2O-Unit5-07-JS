@@ -7,7 +7,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-Unit5-07-JS/sw.js", {
@@ -16,17 +16,19 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function does multiplication.
+ * This function ccalculates the sum of natural numbers.
  */
 function myButtonClicked() {
   var numN = parseFloat(document.getElementById("integer-n").value)
-  var product = 0
-  var counter = 0
+  var sum = 0
+  var counter = 0 
+  var loop = 0
 
-  for (let counter = 0; counter < Math.abs(numN); counter++) {
-    product = product + Math.abs(numN)++ 
-    document.getElementById("product").innerHTML =
-     "The number is " + product + "<br>"
+  for (let loop = 0; loop < numN ; loop++) {
+    counter++
+    sum = sum + counter
+    document.getElementById("sum").innerHTML =
+     "The sum is " + sum + ".<br>"
   } 
 
 }
